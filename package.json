@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@lobehub/tts": "^1.25.1",
     "express": "^4.21.1",
     "sqlite3": "^5.1.7"
   }
