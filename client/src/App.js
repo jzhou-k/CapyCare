@@ -67,16 +67,17 @@
 
 
 import './App.css';
-import Speech from './Speech';
+
 import Dictaphone from './Dictaphone.js';
 function App() {
 
 
     return (
         <div className="App">
-            
+            <h1>CAPYCARE</h1>
+            <h2> appointment scheduling app for the vision impaired</h2>
             <Dictaphone />
-            <Speech />
+
         </div>
 
     );
