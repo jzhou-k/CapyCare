@@ -74,8 +74,15 @@ function App() {
 
     return (
         <div className="App">
-            <h1>CAPYCARE</h1>
-            <h2> appointment scheduling app for the vision impaired</h2>
+
+            { <img 
+                    src="Illustration12.png" 
+                    alt="Capybara logo" 
+                    className="header-image" 
+                    width="200"
+                /> }
+            <h1>CapyCare</h1>
+            <h2> appointment scheduling app for the visually impaired</h2>
             <Dictaphone />
 
         </div>

@@ -1,13 +1,115 @@
+/* Define color palette */
+:root {
+  --carnation-pink: #ff99c8ff;
+  --lemon-chiffon: #fcf6bdff;
+  --nyanza: #d0f4deff;
+  --uranian-blue: #a9def9ff;
+  --mauve: #e4c1f9ff;
+
+  /* Add gradient combinations */
+  --pastel-gradient: linear-gradient(120deg, var(--carnation-pink), var(--lemon-chiffon), var(--nyanza));
+  --cool-gradient: linear-gradient(120deg, var(--uranian-blue), var(--nyanza), var(--mauve));
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+
+  /* Apply gradient background to the body */
+  background: var(--pastel-gradient);
+  background-size: 400% 400%;
+  animation: gradient-shift 10s ease infinite;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: monospace;
+  background-color: var(--uranian-blue);
+  color: #222; /* Darker text for readability */
+  padding: 4px 8px;
+  border-radius: 4px;
 }
+
+/* Container styling for a clean layout */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: var(--cool-gradient);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #444;
+}
+
+/* Button styling */
+button {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: var(--carnation-pink);
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: var(--mauve);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button container for better spacing */
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Add smooth gradient animation */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  font-family: monospace;
+  font-size:  75px;
+  font-weight: bold;
+  color: #3d3d3d;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0px;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-family: monospace;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #3d3d3d;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
+  letter-spacing: 0.3px;
+}
+
+
